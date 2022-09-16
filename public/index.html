@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La app de compras sirve para hacer lista de super sin que olvides nada" />
+    <meta name="keywords" content="lista, compras, supermarket, supermercado, to do list, app" />
+    <meta name="author" content="Marina Francalancia" />
+    <meta name="copyright" content="Marina Francalancia" />
+    <meta name="robots" content="index" />
+    
+    <meta property="og:title" content="App de compras"/>
+    <meta property="og:description" content="La app de compras sirve para hacer lista de super sin que olvides nada" />
+    <meta property="og:type" content="lista, compras, supermarket, supermercado, to do list, app" />
+    <meta property="og:image" content="img/appcompras.jpg"/>
+    <meta property="og:url" content="" />
+
+    <meta property="twitter:title" content="App de compras"/>
+    <meta property="twitter:description" content="La app de compras sirve para hacer lista de super sin que olvides nada" />
+    <meta property="twitter:type" content="lista, compras, supermarket, supermercado, to do list, app" />
+    <meta property="twitter:image" content="img/appcompras.jpg" />
+    <meta property="twitter:url" content="" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>App to do list</title>
+
+    <!--cssmari-->
+    <link rel="icon " href="img/sadgeicon.ico">
+
+<!--google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+    <nav>
+        <h1>App Lista de Compras</h1>
+        
+    </nav>
+    <button id="open" class="btnsumar">+</button>
+
+    <div class="paginavacia" id="paginavacia">                    
+            <div class="sadge"><img src="img/sadge.png" alt="" class="sadge"></div>
+            <h2 class="subtitulo">Tu lista esta vacia</h2>    
+    </div>
+
+    <div class="modalform" id="modalcontainer">        
+    <div class="modal" id="formulario">
+        <button id="close">x</button>            
+        <h3>Hace tu lista aqui:</h3>
+        
+        
+  
+    <form id="form">
+        <label> <p>Producto</p> <input type="text" id="titulo" required></label>
+        <label for="categoria"><p>Tipo de producto</p>
+            <select name="nombre" id="categoria" required>
+                <option value="">Eligi producto</option>
+                <option value="alacena.png">🛒Alacena</option>
+                <option value="frutas.png">🍓Frutas</option>
+                <option value="verduras.png">🥦Verduras</option>
+                <option value="carne.png">🥩Carnes</option>
+                <option value="vegano.png">🌱Apto Vegano</option>
+                <option value="trigo.png">🚫🌿Sin gluten</option>               
+                <option value="limpieza.png">🧻Limpieza</option>
+                <option value="crema.JPG">🧼Cuidados personales</option>
+                <option value="gatito.png">🐶Mascotas</option>
+                <option value="hogar.png">🏠Hogar</option>
+                <option value="gaming.png">🎧Tecnologia</option>
+            </select>
+        </label>
+        <label><p>Descripcion</p><textarea name="descripcion" id="despripcion" cols="30" rows=""></textarea>
+        </label>
+        <button id="submit">Agregar</button>
+    </form>
+
+        
+    </div>
+    </div>
+    
+    <div id="lista">
+        <h3 class="subtitulo">Lista de producto</h3>
+        <ul id="items">
+        </ul>
+    </div>
+    
+
+
+    <div class="contenedorDetalle" id="contDetalle">
+        <div class="cajita">
+        <ul class="detallecontenido" id="detallepadre"></ul>
+        </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+</html>

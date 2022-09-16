@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:#E8F9FD;
+    margin: 0;
+    
+}
+
+#close{
+    background-color:#25316D;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+    font-size: 12px;
+    float: right;
+    box-shadow: 0 2px 4px rgb(5, 5, 14);
+}
+
+#lista{
+    display: none;
+    
+}
+
+header{
+    text-align: center;
+    margin-top: 0px;
+    
+}
+
+
+nav{
+    height: 70px;
+    display: block;   
+    background-color: #25316D;
+}
+
+nav h1{    
+    color:#fcfaf8;    
+    font-family: 'Nunito', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    padding-top: 18px;
+
+}
+.subtitulo{
+    color: #25316D;
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+    color: #25316D;
+    text-align: center;
+    
+    }
+
+.btnsumar{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color:#25316D;
+    color: #fcfaf8;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    box-shadow: 0 2px 4px #25316D;
+    
+}
+
+
+#submit{
+    background-color:#25316D;
+    color: #fcfaf8;
+    padding: 10px;
+    border-radius: 10%;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgb(5, 5, 14);
+    
+    
+}
+.pantalla{
+    width: 100%;
+    height: 100vh;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.modalform{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(91, 91, 91, 0.5);
+    z-index: 100;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    display: none;
+}
+
+
+
+.modal{
+    background-color: #E8F9FD;
+    width: 90%;
+    max-width: 400px;
+    max-height: 570px;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(5, 5, 14);
+    margin-top:80px;
+    margin-left: 20px;
+}
+
+
+#lista ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 30px;
+    
+}
+
+#lista ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;   
+    border:rgb(83, 83, 197) 4px solid;
+    color:#25316D;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+#lista  li h3{
+    flex:1;
+    margin-left: 15px;
+
+}
+
+#lista li img{
+    width: 50px;
+    margin-right: 20px;
+}
+
+#lista li button{
+    background-color:#25316D;
+    color: #fcfaf8;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 10%;
+    border: none;
+    box-shadow: 0 2px 4px #25316D;
+}
+
+
+.modal h1{
+    margin:0;
+}
+
+.modal p{
+    opacity: 0.7;
+    font-size: 14PX;
+}
+
+
+.sadge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contenedorDetalle{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(91, 91, 91, 0.5);
+    z-index: 100;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    display: none;
+
+}
+
+.cajita{
+    background-color: #E8F9FD;
+    width: 90%;
+    max-width: 400px;
+    max-height: 570px;    
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(5, 5, 14);
+    margin-top:100px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+ul #detallepadre{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        padding-left: 0px;
+        
+    }
+    
+#detallepadre  li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;           
+    color:#25316D;
+    border-radius: 10px;
+    padding: 10px;
+        
+    
+    }    
+
+.detallecontenido{
+    padding: 0px;
+    }
+
+#form p{
+    font-family: 'Nunito', sans-serif; 
+    font-size: 16px;
+    color: #25316D;
+    font-weight: bold;
+}
+
+#formulario h3{
+    font-family: 'Nunito', sans-serif; 
+    color: #25316D;
+    font-weight: bold;
+}
+
+#categoria{
+    font-family: 'Nunito', sans-serif; 
+    font-size: 16px;
+}
+
+.cerrando{
+    background-color:#25316D;
+    color:#FFDEB4;
+    padding: 10px;
+    border-radius: 10%;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+#contDetalle li button{
+    background-color: #25316D;
+    color: #fcfaf8;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10%;
+    border: none;
+    box-shadow: 0 2px 4px rgb(5, 5, 14);
+}
